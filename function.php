@@ -1,3 +1,9 @@
+<?php
+function salam($waktu = "Datang", $nama = "Admin")
+{
+    return "Selamat $waktu $nama :)";
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -9,6 +15,7 @@
 
 <body>
     <h2>Materi function</h2>
+    <h1><?= salam('pagi', 'Muhammad Nuh') ?></h1>
     <?php
     echo date('D m y') . "<br>";
     echo date('l') . "<br>";
@@ -21,7 +28,7 @@
     echo gettimeofday(true);
 
     // sisanya kapan kapan aja semuanya ada di php.net
-    
+
     ?>
 </body>
 

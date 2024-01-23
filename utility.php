@@ -6,18 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>utility</title>
     <style>
-    .penjelasan {
-        margin: 20px 25px 20px 25px;
-        background-color: gray;
-        color: white;
-        font-family: cursive;
-    }
+        .penjelasan {
+            margin: 20px 25px 20px 25px;
+            background-color: gray;
+            color: white;
+            font-family: cursive;
+        }
 
-    .penjelasan p {
-        margin-top: -30px;
-        font-size: 15px;
-        padding: 30px;
-    }
+        .penjelasan p {
+            margin-top: -30px;
+            font-size: 15px;
+            padding: 30px;
+        }
     </style>
 </head>
 
@@ -131,6 +131,43 @@ array(3) {
             ?>
 
         </p>
+    </div>
+
+    <div class="empty">
+        <h1>4. Menggunakan die()</h1>
+        <h3>Sedikit Penjelasan</h3>
+        <p>
+            Fungsi die() dalam PHP digunakan untuk mengakhiri eksekusi skrip dan menampilkan pesan kesalahan atau pesan
+            yang ditentukan. Fungsi ini sering digunakan untuk menangani kesalahan atau kondisi yang memerlukan
+            penghentian eksekusi skrip.
+        </p>
+        <p>
+            Contoh:
+            <?php
+            $nilai = 10;
+
+            // Memeriksa nilai variabel, dan menghentikan eksekusi jika nilainya kurang dari 20
+            if ($nilai < 20) {
+                die("Error: Nilai harus minimal 20.");
+            }
+
+            // Eksekusi ini hanya terjadi jika nilai lebih besar atau sama dengan 20
+            echo "Nilai memenuhi syarat: " . $nilai;
+            ?>
+
+        </p>
+        <pre>
+            bentuk sintaks
+            $nilai = 10;
+
+            // Memeriksa nilai variabel, dan menghentikan eksekusi jika nilainya kurang dari 20
+            if ($nilai < 20) {
+                die("Error: Nilai harus minimal 20.");
+            }
+
+            // Eksekusi ini hanya terjadi jika nilai lebih besar atau sama dengan 20
+            echo "Nilai memenuhi syarat: " . $nilai;
+        </pre>
     </div>
 </body>
 
