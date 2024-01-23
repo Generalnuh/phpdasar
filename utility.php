@@ -169,6 +169,30 @@ array(3) {
             echo "Nilai memenuhi syarat: " . $nilai;
         </pre>
     </div>
+    <div class="sleep">
+        <h1>5. Menggunakan sleep()</h1>
+        <h3>Sedikit Penjelasan</h3>
+        <p>
+
+            Fungsi sleep() dalam PHP digunakan untuk memperlambat eksekusi skrip untuk jumlah detik tertentu. Fungsi ini
+            berguna dalam situasi di mana Anda ingin memberi jeda waktu sebelum melanjutkan eksekusi skrip, misalnya,
+            untuk simulasi, penundaan, atau pengaturan interval tertentu.
+        </p>
+        <p>
+            <b>Contoh</b>
+        <pre>
+                <?php
+                echo "Mulai eksekusi skrip.\n";
+
+                // Menunda eksekusi skrip selama 5 detik
+                sleep(5);
+
+                echo "Skrip dilanjutkan setelah jeda waktu.\n";
+                ?>
+
+            </pre>
+        </p>
+    </div>
 </body>
 
 </html>
