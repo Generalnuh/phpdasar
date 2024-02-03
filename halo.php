@@ -8,10 +8,11 @@
 </head>
 
 <body>
+    <h1>Ini dibuat dengan sepenuh hati</h1>
     <h1>
         <?php
-            $nama = 'Muhammad Nuh';
-            echo "hai nama saya $nama"
+        $nama = 'Muhammad Nuh';
+        echo "hai nama saya $nama";
         ?>
     </h1>
 </body>
